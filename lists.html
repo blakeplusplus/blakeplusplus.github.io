@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#abt").show();
+				   $("#lst").hide();
+				$("#engbttn").addClass('selected');
+			$("#engbttn").click(function() {
+				   $("#eng").show();
+				   $("#jp").hide();
+				   $("#engbttn").addClass('selected');
+				   $("#jpbttn").removeClass('selected');
+			});
+			$("#jpbttn").click(function() {
+				   $("#eng").hide();
+				   $("#jp").show();
+				   $("#jpbttn").addClass('selected');
+				   $("#engbttn").removeClass('selected');
+			});
+		});
+		</script>
+		<title>blake's lists</title>
+		<link rel="shortcut icon" href="img/favicon.ico"/>
+		<link rel="stylesheet" href="style/main.css"/>
+		<link rel="stylesheet" href="style/recs.css"/>
+	</head>
+<body>
+<div class="box">
+<div class="header">
+	<p style="font-size: 50px">blake++</p>
+	<p style="font-size: 25px">they/them</p>
+</div>
+<div class="pages">
+	<a href="./index.html">About</a><a href="./lists.html">Lists</a>
+</div>
+<h4>Cool Websites:</h4>
+				<ul>
+					<li><a href="https://fastdl.me">Huge CSS FastDL</a></li>
+				</ul>
+	<a href="https://www.paypal.com/donate/?hosted_button_id=N2XWU9YUELTNS"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate"></a>
+	</div>
+	</div>
+		<table style="margin:auto" class="recTable">
+			<thead>
+				<tr>
+			  		<th>Name</th>
+			  		<th>Software Type</th>
+			  		<th>Tags</th>
+				</tr>
+			</thead>
+			<tr>
+				<td data-sortvalue="Direc"><a title="A ridiculously comprehensive overhaul of the File Explorer system that puts the power in your hands. Replaced 7zip, WinSCP, CDisplayEx, calibre, ImageMagick & Everything. Worth every cent." href="https://www.gpsoft.com.au/">Directory Opus</a></td>
+				<td data-sortvalue="3">Paid</td>
+				<td>File Explorer, Archiver, Media Player, Image Viewer</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Disco"><a title="The current apex of VOIP & IM software with file sharing capabilities. Sketchy and money-hungry but worth it." href="https://discord.com/">Discord</a></td>
+				<td data-sortvalue="2">Free</td>
+				<td>Instant Messenger, VOIP, File Sharing</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="VS"><a title="A powerful source code editor with countless plugins and extension to make work a breeze." href="https://code.visualstudio.com/">VS Code</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Text Editor</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Handb"><a title="A fantastic open source video transcoder that's very reliable." href="https://handbrake.fr/">Handbrake</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Video Transcoder</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="KeePa"><a title="Really solid password manager with optional browser integrations." href="https://keepassxc.org/">KeePassXC</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Password Manager</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="OBS"><a title="Unparalleled. Comprehensive yet easy to use." href="https://obsproject.com/">OBS Studio</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Recording Software, Streaming Software</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Share"><a title="Unparalleled. Comprehensive with many options for uploading and altering." href="https://getsharex.com/">ShareX</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Screenshot Tool</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="VLC"><a title="King of ease of use regarding multimedia players. MPV is another solid option though if you are heavy into customization and tinkering." href="https://www.videolan.org/vlc/">VLC</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Multimedia Player</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="AirVP"><a title="Unparalleled. Provides port forwarding, passes 3rd party audits, cheap, easy to use." href="https://airvpn.org/">AirVPN</a></td>
+				<td data-sortvalue="2">Free</td>
+				<td>VPN</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="QBitt"><a title="Probably the best torrent client out there for 99% of use cases. Easy to use, configure, and troubleshoot." href="https://www.qbittorrent.org/">qBittorrent</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Torrent Client</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Super"><a title="Actually kill foreground processes in Windows." href="https://stefansundin.github.io/superf4/">SuperF4</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Process Killer</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Vento"><a title="Create easily bootable USBs." href="https://www.ventoy.net/en/index.html">Ventoy</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Bootable USB Creator</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Meld"><a title="Hacky and okay way to compare two text files. It isn't great, but gets the job done." href="https://meldmerge.org/">Meld</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>File Comparison</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="MakeM"><a title="In a permanent free beta, MakeMKV is the gold standard for ripping discs, especially BluRays." href="https://makemkv.com/">MakeMKV</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Disc Ripping</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Power"><a title="Regrettably unparalleled. Good for playing your BluRays like BluRays." href="https://www.cyberlink.com/products/powerdvd-ultra/features_en_US.html">PowerDVD Ultra</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>BluRay Playing Software</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="FileB"><a title="Mass rename video files for shows & movies to work with Plex." href="https://github.com/mobeigi/filebot">FileBot</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>TV/Movie Renamer & Organizer</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Open S"><a title="Unparalleled Windows UI modification software. Great to get a properly working start menu." href="https://open-shell.github.io/Open-Shell-Menu/">Open Shell</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Windows UI Modification</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="MKVTo"><a title="Great set of tools to modify Matroska files." href="https://mkvtoolnix.download/">MKVToolNix</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Matroska File Tools</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Subtit"><a title="Edit subtitles for video files easily." href="https://www.nikse.dk/subtitleedit">SubtitleEdit</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Subtitle Editor</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="GeFor"><a title="Easily capture video clips." href="https://www.nvidia.com/en-us/geforce/geforce-experience/">GeForce Experience</a></td>
+				<td title="Requires NVIDIA GPUs." data-sortvalue="2">Free*</td>
+				<td>Recording Software, Streaming Software</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Bunny"><a title="CSS Bunnyhop cheat that doesn't let you go on VAC servers." href="https://github.com/alkatrazbhop/BunnyhopAPE">BunnyhopAPE</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Source Engine Games, CSS Autobhop</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="TF2 Load"><a title="Resup script that remembers what loadout you're on." href="https://github.com/jooonior/tf2-loadouts-script">TF2 Loadouts Script</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Source Engine Games, TF2 B4nny Bind</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Micro"><a title="Windows and Office activator." href="https://github.com/massgravel/Microsoft-Activation-Scripts">Microsoft Activation Scripts</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Windows Activation, Office Activation</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Merik"><a title="Generate vanity tripcodes for sites like 4chan." href="https://github.com/meriken/merikens-tripcode-engine-v3">Meriken's Tripcode Engine</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Tripcode Generator</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Public"><a title="Torrent tracker list, constantly updated." href="https://github.com/ngosang/trackerslist">Public BitTorrent Trackers</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Torrent Trackers</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Undiscord"><a title="Discord Mass Message Deleter" href="https://github.com/victornpb/undiscord">Undiscord</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Discord Tool, Discord Message Deleter</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Bzip2"><a title="Windows Edition. High quality file compression. Good for Source Engine games' fastdl." href="https://gnuwin32.sourceforge.net/packages/bzip2.htm">Bzip2</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Source Engine Games, BZ2 Archiver</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Restr"><a title="Create WebMs under strict file size limits. Great for imageboards." href="https://github.com/HelpSeeker/Restricted-WebM">Restricted WebM</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>CLI, WebM Creator</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Yt-dl"><a title="A feature-rich and highly supported AV downloader for various websites." href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>CLI, AV Downloader</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Galle"><a title="Feature-rich and highly supported image gallery downloader for various websites." href="https://github.com/mikf/gallery-dl">gallery-dl</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>CLI, Image Downloader</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Medica"><a title="Quite possibly one of the best diagnostic toolkits for troubleshooting PCs." href="https://medicatusb.com/">Medicat USB</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Diagnostic Toolkit</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="VTFEd"><a title="A great tool for editing VTF and VMT files." href="https://github.com/Sky-rym/VTFEdit-Reloaded">VTFEdit Reloaded</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Source Engine Games, VTF Editor, VMT Editor</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="VPKEd"><a title="Create, R/W VPK and other pack files." href="https://github.com/craftablescience/VPKEdit">VPKEdit</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Source Engine Games, VPK Editor</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Venco"><a title="Configurable and reliable Discord client mod with multiple plugins. Can't add more plugins tho :/" href="https://github.com/Vendicated/Vencord">Vencord</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Discord Client Mod</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Tron"><a title="Collection of batch files that automate disinfecting Windows PCs. Good for removing built-in Windows spyware." href="https://github.com/bmrf/tron">Tron</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Virus Removal</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Termi"><a title="New Windows terminal that is a direct upgrade of the old." href="https://github.com/microsoft/terminal">Terminal</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Terminal</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Compil"><a title="A feature-rich BSP compiler." href="https://github.com/ruarai/CompilePal">CompilePal</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Source Engine Games, BSP Compiler</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="BSPSr"><a title="Source 1 map decompiler." href="https://github.com/ata4/bspsrc">BSPSrc</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Source Engine Games, BSP Decompiler</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Disco"><a title="Batch file to automate compressing files to 25MB or under for Discord uploads." href="https://github.com/MyloBishop/discompress">Discompress</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Discord Tool, AV Compression</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Discord Chat"><a title="Export Discord chat messages easily." href="https://github.com/Tyrrrz/DiscordChatExporter">Discord Chat Exporter</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Discord Tool</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Lossl"><a title="Extremely efficient FFmpeg GUI." href="https://github.com/mifi/lossless-cut">Lossless Cut</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>AV Editor, Subtitle Editor</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Foobar Disc"><a title="Display currently played track data in foobar to Discord." href="https://github.com/s0hv/foo_discord_rich">foobar Discord RPI</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Discord Tool, foobar Addon</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Foobar Imgu"><a title="Auto-upload album art to imgur for display in Discord RP." href="https://github.com/s0hv/rust-imgur-upload">foobar Imgur Uploader</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Discord Tool, foobar Addon</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="MilkD"><a title="Comprehensive audio visualizer" href="https://github.com/milkdrop2077/MilkDrop3">MilkDrop3</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Audio Visualizer</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Copypa"><a title="Portable comprehensive file server that just werks." href="https://github.com/9001/copyparty">copyparty</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Fileserver</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="FFmpe"><a title="Unparalleled AV converter." href="https://ffmpeg.org/">FFmpeg</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>CLI, AV Converter</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Scoop"><a title="Command-line installer and package manager for Windows. Great for most CLI applications mentioned here." href="https://scoop.sh/">Scoop</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>CLI, Package Manager</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Adobe Photo"><a title="The best photo manipulation software on the market." href="https://www.adobe.com/products/photoshop.html">Adobe Photoshop</a></td>
+				<td data-sortvalue="3">Paid</td>
+				<td>Photo Manipulation</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Clip S"><a title="Some of the best drawing software ever." href="https://www.clipstudio.net/en/">Clip Studio Paint PRO</a></td>
+				<td data-sortvalue="3">Paid</td>
+				<td>Drawing Software</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Adobe Premi"><a title="Unparalleled video editing software." href="https://www.adobe.com/products/premiere.html">Adobe Premiere Pro</a></td>
+				<td data-sortvalue="3">Paid</td>
+				<td>Video Editing Software</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Audac"><a title="Unparalleled audio editing/recording software." href="https://www.audacityteam.org/">Audacity</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Audio Editing Software, Audio Recording Software</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Peace"><a title="Great audio equalizer." href="https://sourceforge.net/projects/peace-equalizer-apo-extension/">Peace Equalizer APO</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Audio Equalizer</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Foobar"><a title="Unparalleled customizable music player with thousands of third-party plugins." href="https://www.foobar2000.org/">foobar2000</a></td>
+				<td data-sortvalue="2">Free</td>
+				<td>Audio Player</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="MP3ta"><a title="Fully featured metadata editor for audio files." href="https://www.mp3tag.de/en/">mp3tag</a></td>
+				<td data-sortvalue="2">Free</td>
+				<td>Audio Metadata Editor</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Nicot"><a title="Alternative graphical client for Soulseek." href="https://nicotine-plus.org/">Nicotine+</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Soulseek Client</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Voicem"><a title="Extremely useful audio mixer that's great for content creators. Easily separate audio into different outputs." href="https://vb-audio.com/Voicemeeter/potato.htm">Voicemeeter Potato</a></td>
+				<td data-sortvalue="3">Paid</td>
+				<td>Audio Mixer</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Mozil"><a title="A privacy focused browser with great customization and speed." href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Web Browser</td>
+			</tr>					
+		</table> 
+	</div>
+	<div class="tabs__tab" id="tab_3" data-tab-info>
+	
+	</div>
+	</div>
+</div>
+<script src="scripts/index.js"></script>
+<script src="scripts/fancyTable.js"></script>
+</body>
+</html>

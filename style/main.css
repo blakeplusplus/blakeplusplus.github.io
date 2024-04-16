@@ -1,0 +1,58 @@
+@font-face{
+    font-family: 'pixel-square-10';
+    font-style: normal;
+    src: url('../font/pixel-square-10.woff2');
+}
+*{
+    margin:0px;
+}
+body{
+    background: url('../img/ninja_chill.gif') bottom left no-repeat fixed;
+    background-size: 20%;
+    background-color:#C9C8CE;
+}
+.header{
+    font-family: 'pixel-square-10';
+}
+.pages{
+    display:flex;
+    text-align:center;
+}
+.pages a{
+    padding:10px;
+    border:2px solid rgb(0, 0, 0);
+    flex-grow:1;
+}
+.box{
+    text-align:left;
+    padding:15px;
+    border-radius:25px;
+    margin:auto;
+}
+.logos{
+    text-align:center;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+a:visited{
+    color:#0000EE;
+}
+@media (max-width: 601px){
+    img.logo{
+        height:48px;
+        width:48px;
+    }
+    body{
+        background-image:none;
+    }
+}	
+@media (min-width: 602px){
+    .box{
+        max-width:60%;
+    }
+    img.logo{
+        height:72px;
+        width:72px;
+    }
+}
