@@ -5,35 +5,53 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-		<title>WIP</title>
+		<title>blake++</title>
 		<link rel="shortcut icon" href="img/favicon.ico"/>
 		<style>
-			body{
+			@font-face{
+				font-family: 'pixel-square-10';
+				font-style: normal;
+				src: url('font/pixel-square-10.woff2');
+			}
+			*{
 				margin:0px;
+			}
+			.header{
+				font-family: 'pixel-square-10';
+			}
+			.logos{
+				text-align:center;
+				display:block;
+			}
+			@media (max-width: 801px){
+				img.logo{
+					height:48px;
+					width:48px;
+				}
+			}	
+			@media (min-width: 802px){
+				.box{
+					max-width:60%;
+				}
+				img.logo{
+					height:72px;
+					width:72px;
+				}
+
+			}
+			body{
 				background-color:#919191;
 			}
-			.container{
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-around;
-			}
 			.box{
-				color: #eeeeee;
-				background-color:#383838;
 				text-align:left;
 				padding:15px;
 				border-radius:25px;
-				max-width:33%;
-				margin:10px;
+				margin:auto;
 			}
 			h4{
-				margin: 0px;
 				margin-bottom: 5px;
 			}
-			img.logo {
-				height:15%;
-				width:15%;
-			}
+			
 			[data-tab-info] {
 				display: none;
 			}
@@ -49,22 +67,20 @@
 				color: rgb(255, 255, 255);
 			}
 			.tabs {
-				border-bottom: 1px solid grey;
-				background-color: rgb(13, 41, 12);
+				background-color: rgb(0, 0, 0);
 				font-size: 25px;
-				color: rgb(0, 0, 0);
+				color: rgb(255, 255, 255);
 				display: flex;
-				
 			}
 			.tabs span {
-				background: rgb(8, 59, 5);
+				background: rgb(31, 32, 31);
 				width: 100%;
 				padding: 10px;
 				border: 1px solid rgb(255, 255, 255);
 				text-align: center;
 			}
 			.tabs span:hover {
-				background: rgb(35, 143, 30);
+				background: rgb(110, 110, 110);
 				cursor: pointer;
 				color: black;
 			}
@@ -74,36 +90,34 @@
 		</style>
 	</head>
 <body>
+<div class="box">
+<div class="header">
+	<p style="font-size: 50px">blake++</p>
+	<p style="font-size: 25px">they/them</p>
+</div>
 <div class="tabs">
-	<span data-tab-value="#tab_1">About</span>
-	<span data-tab-value="#tab_2">Recommendations</span>
-	<span data-tab-value="#tab_3"></span>
+		<span data-tab-value="#tab_1">About</span>
+		<span data-tab-value="#tab_2">Recs</span>
+		<span data-tab-value="#tab_3"></span>
 </div>
 <div class="tab-content">
 	<div class="tabs__tab active" id="tab_1" data-tab-info>
-	<div class="container">
-		<div class="box">
-			<h4>blake++</h4>
-			<h4>they/them</h4>
+		<div class="logos">
 			<a title="Discord account" href="https://discord.com/users/110256890549678080"><img alt="Discord logo" class="logo" src="img/discord.png"></img></a>
 			<a title="Tumblr General Account" href="https://www.tumblr.com/blog/blakeplusplus"><img alt="Tumblr logo" class="logo" src="img/tumblr1.png"></img></a>
 			<a title="Tumblr Games Account" href="https://www.tumblr.com/blog/blakeplusgames"><img alt="Tumblr logo" class="logo" src="img/tumblr2.png"></img></a>
 			<a title="Tumblr Shows/Movies Account" href="https://www.tumblr.com/blog/blakeplusshows"><img alt="Tumblr logo" class="logo" src="img/tumblr3.png"></img></a>
-			<br>
 			<a title="Steam account" href="http://steamcommunity.com/profiles/76561198055712749 "><img alt="Steam logo" class="logo" src="img/steam.png"></img></a>
 			<a title="YouTube channel" href="https://www.youtube.com/channel/UCvRoJJzQvRSh9TJRkMYqScA"><img alt="YouTube logo" class="logo" src="img/youtube.png"></img></a>
 			<a title="ArchiveOfOurOwn profile" href="https://archiveofourown.org/users/blakeplusplus"><img alt="AO3 logo" class="logo" src="img/ao3.png"></img></a>
 			<a title="Github profile" href="https://github.com/blakeplusplus"><img alt="GitHub logo" class="logo" src="img/github.png"></img></a>
-			<br>
 			<a title="Xbox profile" href="https://xboxgamertag.com/search/blakeplusplus"><img alt="Xbox logo" class="logo" src="img/xbox.png"></img></a>
 			<a title="Osu! profile" href="https://osu.ppy.sh/users/7308385"><img alt="Osu! logo" class="logo" src="img/osu.png"></img></a>
 			<a title="Gamebanana profile" href="https://gamebanana.com/members/1703331"><img alt="Gamebanana logo" class="logo" src="img/gb.png"></img></a>
 			<a title="Monkeytype profile" href="https://monkeytype.com/profile/blakeplusplus"><img alt="Monkeytype logo" class="logo" src="img/mt.png"></img></a> 
-			<br>
 			<a title="PCPartPicker profile" href="https://pcpartpicker.com/user/blake%252B%252B/builds/"><img alt="PCPartPicker logo" class="logo" src="img/ppp.png"></img></a> 
 			<a title="TF2Maps profile" href="https://tf2maps.net/members/blake.41307/"><img alt="TF2Maps logo" class="logo" src="img/tf2maps.png"></img></a>
 		</div>
-		<div class="box">
 			<h4>Games</h4>
 			<ul>
 				<li>Celeste | <a href="https://docs.google.com/spreadsheets/d/14mS5_LSbL-bCF7kGHXVvfIn_w3sWQbGcVYtQPxawaDM/edit?usp=sharing">Stats</a></li>
@@ -119,8 +133,6 @@
 				<li>Furi</li>
 				<li>Metal Arms: Glitch in the System</li>
 			</ul>
-		</div>
-		<div class="box">
 			<h4>Music</h4>
 				<ul>
 					<li>Neutral Milk Hotel</li>
@@ -131,8 +143,6 @@
 					<li>Frank Ocean</li>
 					<li>Too many more...</li>
 				</ul>
-		</div>
-		<div class="box">
 			<h4>Shows</h4>
 			<ul>
 				<li>RWBY</li>
@@ -140,8 +150,6 @@
 				<li>JoJo's Bizarre Adventure</li>
 				<li>Band of Brothers</li>
 			</ul>
-		</div>
-		<div class="box">
 			<h4>Important History</h4>
 			<ul>
 				<li>Owned a server named Garry's Bhop from Sep 2019 to Feb 2020 as well as a FastDL, then made it <a href="https://github.com/blakeplusplus/garrysbhop">open source</a></li>
@@ -153,8 +161,6 @@
 				<li>4v4 PASS Time Plugin Developer and Config Maintainer</li>
 				<li>2nd TF2CC 4v4 PASS Time Cup Organizer</li>
 			</ul>
-		</div>
-		<div class="box">
 			<h4>Favorites:</h4>
 				<ul>
 					<li>Crawfish</li>
@@ -166,10 +172,7 @@
 				<ul>
 					<li><a href="https://fastdl.me">Huge CSS FastDL</a></li>
 				</ul>
-		</div>
-		<div class="box">
 			<a href="https://www.paypal.com/donate/?hosted_button_id=N2XWU9YUELTNS"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate"></a>
-		</div>
 	</div>
 	</div>
 	<div class="tabs__tab" id="tab_2" data-tab-info>
