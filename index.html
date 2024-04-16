@@ -16,12 +16,24 @@
 			*{
 				margin:0px;
 			}
+			body{
+				background-color:#919191;
+			}
 			.header{
 				font-family: 'pixel-square-10';
+			}
+			.box{
+				text-align:left;
+				padding:15px;
+				border-radius:25px;
+				margin:auto;
 			}
 			.logos{
 				text-align:center;
 				display:block;
+			}
+			a:visited{
+				color:#0000EE;
 			}
 			@media (max-width: 801px){
 				img.logo{
@@ -37,27 +49,9 @@
 					height:72px;
 					width:72px;
 				}
-
 			}
-			body{
-				background-color:#919191;
-			}
-			.box{
-				text-align:left;
-				padding:15px;
-				border-radius:25px;
-				margin:auto;
-			}
-			h4{
-				margin-bottom: 5px;
-			}
-			
-			[data-tab-info] {
-				display: none;
-			}
-			.active[data-tab-info] {
-				display: block;
-			}
+			[data-tab-info] {display: none;}
+			.active[data-tab-info] {display: block;}
 			.tab-content {
 				margin-top: 1rem;
 				padding-left: 1rem;
@@ -83,9 +77,6 @@
 				background: rgb(110, 110, 110);
 				cursor: pointer;
 				color: black;
-			}
-			a:visited{
-				color:#0000EE;
 			}
 		</style>
 	</head>
@@ -168,7 +159,7 @@
 					<li>Mead</li>
 					<li>Pixel 7</li>
 				</ul>
-			<h4>Things that are cool:</h4>
+			<h4>Cool Websites:</h4>
 				<ul>
 					<li><a href="https://fastdl.me">Huge CSS FastDL</a></li>
 				</ul>
@@ -230,7 +221,7 @@
 				<td>VPN</td>
 			</tr>
 			<tr>
-				<td data-sortvalue="qBitt"><a title="Probably the best torrent client out there for 99% of use cases. Easy to use, configure, and troubleshoot." href="https://www.qbittorrent.org/">qBittorrent</a></td>
+				<td data-sortvalue="QBitt"><a title="Probably the best torrent client out there for 99% of use cases. Easy to use, configure, and troubleshoot." href="https://www.qbittorrent.org/">qBittorrent</a></td>
 				<td data-sortvalue="1">FOSS</td>
 				<td>Torrent Client</td>
 			</tr>
@@ -325,12 +316,12 @@
 				<td>CLI, WebM Creator</td>
 			</tr>
 			<tr>
-				<td data-sortvalue="yt-dl"><a title="A feature-rich and highly supported AV downloader for various websites." href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a></td>
+				<td data-sortvalue="Yt-dl"><a title="A feature-rich and highly supported AV downloader for various websites." href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a></td>
 				<td data-sortvalue="1">FOSS</td>
 				<td>CLI, AV Downloader</td>
 			</tr>
 			<tr>
-				<td data-sortvalue="galle"><a title="Feature-rich and highly supported image gallery downloader for various websites." href="https://github.com/mikf/gallery-dl">gallery-dl</a></td>
+				<td data-sortvalue="Galle"><a title="Feature-rich and highly supported image gallery downloader for various websites." href="https://github.com/mikf/gallery-dl">gallery-dl</a></td>
 				<td data-sortvalue="1">FOSS</td>
 				<td>CLI, Image Downloader</td>
 			</tr>
@@ -390,12 +381,12 @@
 				<td>AV Editor, Subtitle Editor</td>
 			</tr>
 			<tr>
-				<td data-sortvalue="foobar Disc"><a title="Display currently played track data in foobar to Discord." href="https://github.com/s0hv/foo_discord_rich">foobar Discord RPI</a></td>
+				<td data-sortvalue="Foobar Disc"><a title="Display currently played track data in foobar to Discord." href="https://github.com/s0hv/foo_discord_rich">foobar Discord RPI</a></td>
 				<td data-sortvalue="1">FOSS</td>
 				<td>Discord Tool, foobar Addon</td>
 			</tr>
 			<tr>
-				<td data-sortvalue="foobar Imgu"><a title="Auto-upload album art to imgur for display in Discord RP." href="https://github.com/s0hv/rust-imgur-upload">foobar Imgur Uploader</a></td>
+				<td data-sortvalue="Foobar Imgu"><a title="Auto-upload album art to imgur for display in Discord RP." href="https://github.com/s0hv/rust-imgur-upload">foobar Imgur Uploader</a></td>
 				<td data-sortvalue="1">FOSS</td>
 				<td>Discord Tool, foobar Addon</td>
 			</tr>
@@ -405,7 +396,7 @@
 				<td>Audio Visualizer</td>
 			</tr>
 			<tr>
-				<td data-sortvalue="copypa"><a title="Portable comprehensive file server that just werks." href="https://github.com/9001/copyparty">copyparty</a></td>
+				<td data-sortvalue="Copypa"><a title="Portable comprehensive file server that just werks." href="https://github.com/9001/copyparty">copyparty</a></td>
 				<td data-sortvalue="1">FOSS</td>
 				<td>Fileserver</td>
 			</tr>
@@ -445,12 +436,12 @@
 				<td>Audio Equalizer</td>
 			</tr>
 			<tr>
-				<td data-sortvalue="foobar"><a title="Unparalleled customizable music player with thousands of third-party plugins." href="https://www.foobar2000.org/">foobar2000</a></td>
+				<td data-sortvalue="Foobar"><a title="Unparalleled customizable music player with thousands of third-party plugins." href="https://www.foobar2000.org/">foobar2000</a></td>
 				<td data-sortvalue="2">Free</td>
 				<td>Audio Player</td>
 			</tr>
 			<tr>
-				<td data-sortvalue="mp3ta"><a title="Fully featured metadata editor for audio files." href="https://www.mp3tag.de/en/">mp3tag</a></td>
+				<td data-sortvalue="MP3ta"><a title="Fully featured metadata editor for audio files." href="https://www.mp3tag.de/en/">mp3tag</a></td>
 				<td data-sortvalue="2">Free</td>
 				<td>Audio Metadata Editor</td>
 			</tr>
