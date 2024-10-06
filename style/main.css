@@ -12,7 +12,7 @@ body{
     background-color:#C9C8CE;
 }
 .header{
-    font-family: 'pixel-square-10';
+    font-family:'pixel-square-10';
 }
 .pages{
     display:flex;
@@ -38,7 +38,15 @@ body{
 a:visited{
     color:#0000EE;
 }
+img.pfp{
+    float:left;
+}
 @media (max-width: 601px){
+    img.pfp{
+        height:100px;
+        width:100px;
+        padding-right:10px;
+    }
     img.logo{
         height:48px;
         width:48px;
@@ -50,6 +58,11 @@ a:visited{
 @media (min-width: 602px){
     .box{
         max-width:60%;
+    }
+    img.pfp{
+        height:200px;
+        width:200px;
+        padding-right:20px;
     }
     img.logo{
         height:72px;
