@@ -3,6 +3,11 @@
     font-style: normal;
     src: url('../font/pixel-square-10.woff2');
 }
+@font-face{
+    font-family: 'sys2-light';
+    font-style: normal;
+    src: url('../font/sys2_light.woff');
+}
 *{
     margin:0px;
 }
@@ -11,17 +16,34 @@ body{
     background-size: 20%;
     background-color:#C9C8CE;
 }
+button{
+    all:unset;
+    cursor:pointer;
+}
+button:hover{
+    background-color:gold;
+}
+.hidden{
+    display:none;
+}
+.show{
+    display:block;
+}
 .header{
     font-family:'pixel-square-10';
 }
 .pages{
+    font-family:'pixel-square-10';
+    font-size:24px;
+    line-height:20px;
     display:flex;
     text-align:center;
 }
 .pages a{
-    padding:10px;
+    padding:6px;
     border:2px solid rgb(0, 0, 0);
     flex-grow:1;
+    text-decoration: none;
 }
 .box{
     text-align:left;
@@ -29,11 +51,22 @@ body{
     border-radius:25px;
     margin:auto;
 }
+.text-body{
+    font-family:'sys2-light';
+}
 .logos{
     text-align:center;
     display:block;
     padding-top:10px;
     padding-bottom:10px;
+}
+.logos.highlight{
+    background-color:gold;
+}
+.footer{
+    position: fixed;
+    left: 30%;
+    bottom: 0;
 }
 a:visited{
     color:#0000EE;

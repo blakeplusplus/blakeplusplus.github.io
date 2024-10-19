@@ -7,16 +7,16 @@
 		<title>blake's about</title>
 		<link rel="shortcut icon" href="img/clipped_wings.ico"/>
 		<link rel="stylesheet" href="style/main.css"/>
+		<script src="scripts/displayBox.js"></script>
 	</head>
 <body>
 <div class="box">
 	<div class="header">
 		<a title="Art by @Tungsten_Hale on Twitter" href="https://x.com/Tungsten_Hale/status/1842836186571649130"><img alt="Profile picture" class="pfp" src="img/pfp.jpg"></a>
 		<div class="primary-info">	
-			<p style="font-size:50px;line-height:30px;padding-bottom:2px;">blake++</p>
-			<a href="http://www.asexualityarchive.com/custom-pride-flag-emojis/"><img alt="Nonbinary pride flag" title="Nonbinary" style="max-height:22px;padding-right:2px;" src="btns/prideflag_nb.png"></img></a><span style="font-size:25px">they/them</span><a href="http://www.asexualityarchive.com/custom-pride-flag-emojis/"><img alt="Pansexual pride flag" title="Pansexual" style="max-height:22px;padding-right:2px;" src="btns/prideflag_pan.png"></img></a>
-			<p style="font-size:25px">Age: 24</p>
-			<p style="font-size:25px">Location: Texas, USA</p>
+			<a style="font-size:50px;line-height:30px;padding-bottom:2px;">blake++</a><a href="http://www.asexualityarchive.com/custom-pride-flag-emojis/"><img alt="Nonbinary pride flag" title="Nonbinary" style="max-height:22px;padding-right:2px;" src="btns/prideflag_nb.png"></img><img alt="Pansexual pride flag" title="Pansexual" style="max-height:22px;padding-right:2px;" src="btns/prideflag_pan.png"></img></a>
+			<br>
+			<span style="font-size:25px">they/them</span><a style="font-size:25px">, 24, Texas</a><br>
 			<a href="https://y2k.neocities.org/buttons"><img alt="Legalize hash now!" src="btns/hash_now.gif"></img></a>
 			<a href="https://88by31.neocities.org/games"><img alt="SCP" src="btns/scp.png"></img></a>
 			<a href="https://mesoscale.neocities.org/"><img alt="Free Palestine!" src="btns/free_palestine.gif"></img></a>
@@ -63,7 +63,7 @@
 		</div>
 	</div>
 	<div class="pages">
-		<a href="./">About</a><a href="./lists.html">Lists</a>
+		<a href="./">about</a><a href="./lists.html">lists</a>
 	</div>
 	<div class="logos">
 		<a title="Steam account" href="http://steamcommunity.com/profiles/76561198055712749"><img alt="Steam logo" class="logo" src="img/steam.png"></img></a>
@@ -90,13 +90,14 @@
 		<a title="Twitter art retweet account" href="https://twitter.com/blakeplusplus"><img alt="Twitter logo with retweet symbol" class="logo" src="img/twitter-rtwt.png"></img></a>
 			-->
 	</div>
-	<p style="font-size:24px;">hi i'm blake. this is my website. i use bluesky as a personal blog. i love video games, music, my motorcycle, and more. i like some shows and movies, but mostly read fanfiction. i've done a lot of cool stuff online. WIP</p>
-	<div>
-		<!--
-		basically for this section it'll be like a display box where it displays the various things depending on what word you click on above. so like if i click on "video games" above the display box changes to show my favorite video games, etc. also if you hover over twitter or fanfiction it creates a soft glow behind the specific icon so you know which one to click
-		-->
+	<div class="text-body">
+		<p style="font-size:24px;">hi i'm blake. this is my website. i use <button data-target-id="bsky" onclick="toggle(event)">bluesky</button> as a blog. i love <button data-target-id="games" onclick="toggle(event)">video games</button>, <button data-target-id="music" onclick="toggle(event)">music</button>, <button data-target-id="moto" onclick="toggle(event)">my motorcycle</button>, and <button data-target-id="favs" onclick="toggle(event)">more</button>. i like some <button data-target-id="telly" onclick="toggle(event)">shows and movies</button>, but mostly read <button data-target-id="fanfic" onclick="toggle(event)">fanfiction</button>. i've done <button data-target-id="history" onclick="toggle(event)">a lot of cool stuff online</button>.</p>
 	</div>
-	<h4>Games</h4>
+	<!--
+		basically for this section it'll be like a display box where it displays the various things depending on what word you click on above. so like if i click on "video games" above the display box changes to show my favorite video games, etc. also if you hover over twitter or fanfiction it creates a soft glow behind the specific icon so you know which one to click
+	-->
+	<div>
+		<div id="games" class="hidden">
 		<ul>
 			<li>Class of '09 Series (except Flip Side)</li>
 			<li>Team Fortress 2 | <a href="https://github.com/blakeplusplus/tf2plusplus">Custom Folder</a> & <a href="https://github.com/blakeplusplus/m0rehudplusplus">HUD</a> | <a href="https://rgl.gg/Public/PlayerProfile.aspx?p=76561198055712749">RGL</a></li>
@@ -108,7 +109,8 @@
 			<li>Signalis</li>
 			<li>Arctic Eggs, Bomb Rush Cyberfunk, Quadrilateral Cowboy, Prey, UNDERTALE, SOMA, L4D2, Gloomwood, ULTRAKILL, Bo3 Zombies, Doom Eternal, Half Life Alyx, Terraria, Trials, Furi</li>
 		</ul>
-	<h4>Riding</h4>
+		</div>
+		<div id="moto" class="hidden">
 		<ul>
 			<li><a href="https://www.motorcyclespecs.co.za/model/yamaha/Yamaha%20Star%20Bolt%20C-Spec%2015.htm">2015 Yamaha Star Bolt C-Spec, Silver</a> w/ <a href="https://kosonorthamerica.com/product/dl-04b-multifunction-meter-for-yamah-bolt/">Koso DL-04B Speedometer</a> & <a href="https://chromeglow.com/products/yamaha-bolt-led-fender-eliminator-light-bar-kit/yamaha-cruisers?id=7279">Chrome Glow Fender Eliminator Light Bar Kit</a></li>
 			<li><a title="LG" href="https://www.revzilla.com/motorcycle/biltwell-lane-splitter-helmet-2016?sku_id=1185566">Biltwell Lane Splitter Helmet (Matte Black)</a>, <a href="https://www.revzilla.com/motorcycle/biltwell-lane-splitter-gen-2-anti-fog-face-shield?sku_id=1805217">Gold Mirror Visor</a></li>
@@ -120,7 +122,8 @@
 			<li><a title="Ear protection." href="https://www.amazon.com/dp/B004PO10E2">Shure SE215 Earbuds (Clear)</a> & <a title="Ear protection." href="https://www.amazon.com/dp/B06Y25SM97/">Alpine MotoSafe Pro Earplugs</a></li>
 			<li><a title="Phone mount." href="https://www.amazon.com/dp/B09FSM49XN">Peak Design Motorcycle Bar Mount</a> (with phone case)</li>
 		</ul>
-	<h4>Shows</h4>
+		</div>
+		<div id="telly" class="hidden">
 		<ul>
 			<li>RWBY</li>
 			<li>House, M.D.</li>
@@ -130,7 +133,8 @@
 			<li>JoJo's Bizarre Adventure</li>
 			<li>Band of Brothers</li>
 		</ul>
-	<h4>Important History</h4>
+		</div>
+		<div id="history" class="hidden">
 		<ul>
 			<li>Owned a server named Garry's Bhop from Sep 2019 to Feb 2020 as well as a FastDL, then made it <a href="https://github.com/blakeplusplus/garrysbhop">open source</a></li>
 			<li>Developed and maintained the site for /rwbyg/ available at <a href="https://github.com/mercenarylongest/mercenarylongest.github.io">rwbyg.com</a> from Jan 2021 to present, as well as supplying BluRay rips</li>
@@ -141,17 +145,22 @@
 			<li>4v4 PASS Time Plugin Developer and Config Maintainer</li>
 			<li>2nd TF2CC 4v4 PASS Time Cup Organizer</li>
 		</ul>
-		<h4>Favorites</h4>
-			<ul>
-				<li>Food: Crawfish</li>
-				<li>Fruit: Pomegranates</li>
-				<li>Vegetable: Okra</li>
-				<li>Alcohol: Knob Creek Bourbon</li>
-				<li>Drink: Water</li>
-				<li>Phone: Pixel 7</li>
-				<li>Snack: Chips & Queso/Salsa</li>
-			</ul>
-		<a href="https://www.paypal.com/donate/?hosted_button_id=N2XWU9YUELTNS"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate"></a>
+		</div>
+		<div id="favs" class="hidden">
+		<ul>
+			<li>Food: Crawfish</li>
+			<li>Fruit: Pomegranates</li>
+			<li>Vegetable: Okra</li>
+			<li>Alcohol: Knob Creek Bourbon</li>
+			<li>Drink: Water</li>
+			<li>Phone: Pixel 7</li>
+			<li>Snack: Chips & Queso/Salsa</li>
+		</ul>
+		</div>
+	</div>
+<div class="footer">
+
+</div>
 </div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-// function to get each tab details
+// function to get each tab details; for the table
 const tabs = document.querySelectorAll('[data-tab-value]')
 const tabInfos = document.querySelectorAll('[data-tab-info]')
 
