@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="scripts/displayBox.js"></script>
 		<title>blake's lists</title>
 		<link rel="shortcut icon" href="img/clipped_wings.ico"/>
 		<link rel="stylesheet" href="style/main.css"/>
@@ -90,40 +91,49 @@
 	<div class="text-body">
 	<h3>Cool Websites:</h3>
 		<ul>
-			<li><a href="https://fmhy.net/">freemediaheckyeah</a>, <a href="https://rentry.org/firehawk52">Firehawk52</a>, <a href="https://champagne.pages.dev/">Champagne Piracy</a>, & <a href="https://ripped.guide/">Ripped</a> - Extremely large collections of ways to get free stuff on the internet. Incredibly valuable.</li>
+			<li><a href="https://fmhy.net/">freemediaheckyeah</a> - Extremely large collections of ways to get free stuff on the internet. Here are my <button style="color:#0000EE;;" data-target-id="fmhy-faves" onclick="toggle(event)">favorites</button> from it.</li>
+				<div id="fmhy-faves" class="hidden">
+					<ul>
+						<li><a href="https://halome.nu/">Halo Menus</a> - Halo Main Menus in your browser.</li>
+						<li><a href="http://textfiles.com/">TextFiles</a> - A site full of textfiles dating back from 1980s, full of interesting stories and concepts.</li>
+						<li><a href="https://www.portablefreeware.com/">The Portable Freeware Collection</a> - A collection of portable freeware that is constantly updated.</li>
+						<li><a href="https://minesweeper.online/">Minesweeper Online</a></li>
+						<li><a href="https://wikenigma.org.uk/">Wikenigma</a> - A wiki dedicated to documenting fundamental gaps in human knowledge</li>
+						<li><a href="https://www.pcgamingwiki.com/">PCGamingWiki</a> - A wiki with resources on how to fix any buggy PC game</li>
+						<li><a href="https://ezgif.com/">Ezgif</a> - A phenomenal tool for creating and modifying animated image formats, especially animated WebP!</li>
+						<ul>
+						<h4>Free File Storage/Sharing</h4>
+							<li><a href="https://trashbytes.net/">TRASHBYTES</a> - Permanent, any files, no limit</li>
+							<li><a href="https://catbox.moe/">Catbox</a> - Permanent, almost any files, max 200MB</li>
+							<li><a href="https://pillowcase.su/">Pillowcase</a> - Permanent, music files only, max 200MB</li>
+							<li><a href="https://litterbox.catbox.moe/">Litterbox</a> - Temporary up to 3 days, almost any files, max 1GB</li>
+							<li><a href="https://buzzheavier.com/">BUZZHEAVIER</a> - Deleted after 30 days of no downloads, any files, no limit</li>
+							<li><a href="https://gofile.io/">GoFile</a> - Deleted after 10 days of no downloads, any files, no max (Has Paid Options)</li>
+						</ul>
+						<ul>
+							<h4>Music Downloading/Streaming</h4>
+							<li><a href="https://covers.musichoarders.xyz/">Music Artwork Finder</a> - Find artwork for music from a huge variety of sources.</li>
+							<li><a href="https://lucida.to/">lucida</a> - Download music directly from most streaming services.</li>
+							<li><a href="https://yams.tf/">YAMS</a> - Download music directly from multiple streaming services.</li>
+							<li><a href="https://squid.wtf/">squid.wtf</a> - Download music directly from Deezer/Qobuz.</li>
+							<li><a href="https://www.qobuz-dl.com/">qobuz-dl</a> - Download music directly from Qobuz.</li>
+							<li><a href="https://tau.thetechrobo.ca/">The Artist's Union Archive</a> - Get audio tracks for specific songs from the now-defunct Artist's Union. Must know track ID.</li>
+							<li><a href="https://audiophile.fm/">Audiophile FM</a> - Lossless 24/7 radio streams with a variety of genres.</li>			
+						</ul>
+					</ul>
+				</div>
+			<li><a href="https://github.com/WorldObservationLog/AppleMusicDecrypt">Apple Music Decrypt</a> - Decryption tool for Apple Music to download lossless files. Still works (as of Feb 2025), but accounts get banned fast.</li>
 			<li><a href="https://thewiki.moe/">thewiki.moe</a> - Wiki for a bunch of things related to anime and manga, including streaming, torrenting, and more.</li>
 			<li><a href="https://search.earth911.com/">Earth911</a> - One of NA's most extensive recycling databases. Put in the material you want to recycle and your zip code and find a recycling center.</li>
 			<li><a href="https://cable.ayra.ch/empty/">Empty files</a> - A collection of easily downloadable empty files. Not all files can be 0 bytes and still be valid, so this can be useful.</li>
-			<li><a href="https://www.portablefreeware.com/">The Portable Freeware Collection</a> - A collection of portable freeware that is constantly updated.</li>
 			<li><a href="https://scp-wiki.wikidot.com/">SCP Foundation</a> - Totally free sci-fi horror usually written in the style of containment procedures for various supernatural things. Check out my AO3 bookmarks to see my favorites.</li>
-			<li><a href="http://textfiles.com/">TextFiles</a> - A site full of textfiles dating back from 1980s, full of interesting stories and concepts.</li>
 			<li><a href="https://miro.com/">Miro</a> - A collaborative whiteboard and workspace for planning and executing projects.</li>
-			<li><a href="https://halome.nu/">Halo Menus</a> - Halo Main Menus in your browser.</li>
 			<li><a href="https://nohello.net/en/">nohello</a>- Useful site for important users who hate just getting "hellos".</li>
-			<li><a href="https://minesweeper.online/">Minesweeper Online</a></li>
 			<li><a href="https://fastdl.me">Huge CSS FastDL</a></li>
-			<ul>
-				<h4>Free File Storage/Sharing</h4>
-				<li><a href="https://trashbytes.net/">TRASHBYTES</a> - Permanent, any files, no limit</li>
-				<li><a href="https://filehaus.su/">Filehaus</a> - Permanent, any files, 300GB</li>
-				<li><a href="https://anonfile.net/">anonfile</a> - Permanent, any files, 20GB</li>
-				<li><a href="https://catbox.moe/">Catbox</a> - Permanent, almost any files, max 200MB</li>
-				<li><a href="https://pillowcase.su/">Pillowcase</a> - Permanent, music files only, max 200MB</li>
-				<li><a href="https://litterbox.catbox.moe/">Litterbox</a> - Temporary up to 3 days, almost any files, max 1GB</li>
-				<li><a href="https://buzzheavier.com/">BUZZHEAVIER</a> - Deleted after 30 days of no downloads, any files, no limit</li>
-				<li><a href="https://krakenfiles.com/">krakenfiles</a> - Deleted after 3 months of no downloads, any files, max 500MB</li>
-				<li><a href="https://gofile.io/">GoFile</a> - Deleted after 10 days of no downloads, any files, no max (Has Paid Options)</li>
-			</ul>
-			<ul>
-				<h4>Music Downloading/Streaming</h4>
-				<li><a href="https://covers.musichoarders.xyz/">Music Artwork Finder</a> - Find artwork for music from a huge variety of sources.</li>
-				<li><a href="https://lucida.to/">lucida</a> - Download music directly from most streaming services.</li>
-				<li><a href="https://yams.tf/">YAMS</a> - Download music directly from multiple streaming services.</li>
-				<li><a href="https://squid.wtf/">squid.wtf</a> - Download music directly from Deezer/Qobuz.</li>
-				<li><a href="https://www.qobuz-dl.com/">qobuz-dl</a> - Download music directly from Qobuz.</li>
-				<li><a href="https://tau.thetechrobo.ca/">The Artist's Union Archive</a> - Get audio tracks for specific songs from the now-defunct Artist's Union. Must know track ID.</li>
-				<li><a href="https://audiophile.fm/">Audiophile FM</a> - Lossless 24/7 radio streams with a variety of genres.</li>			
-			</ul>
+			<li><a href="https://cs16.samke.me/">cs16.css</a> - CSS library based on Counter Strike 1.6 UI.</li>
+			<li><a href="https://thebestmotherfucking.website/">The <i>best</i> motherfucking website</a></li>
+			<li>Internet Radios: <a href="https://github.com/mikepierce/internet-radio-streams">Mike's Curated List</a>, <a href="https://mw.rat.bz/davgmsrl/">Demoscene/VGM List</a> - Multiple lists of easy ways to listen to free internet radio stations (also check out <a href="https://fmhy.net/storage#internet-radio">FMHY's internet radio</a> section)</li>
+			<li><a href="https://modarchive.org/">The Mod Archive</a> - A massive collection of music modules: keygen/demoscene/chiptune, all free!</li>
 		</ul>
 		<br><br><h3>Software:</h3>
 		<table style="margin:auto" class="recTable">
@@ -228,11 +238,6 @@
 				<td data-sortvalue="Subtit"><a title="Edit subtitles for video files easily." href="https://www.nikse.dk/subtitleedit">SubtitleEdit</a></td>
 				<td data-sortvalue="1">FOSS</td>
 				<td>Subtitle Editor</td>
-			</tr>
-			<tr>
-				<td data-sortvalue="Bunny"><a title="CSS Bunnyhop cheat that doesn't let you go on VAC servers." href="https://github.com/alkatrazbhop/BunnyhopAPE">BunnyhopAPE</a></td>
-				<td data-sortvalue="1">FOSS</td>
-				<td>Source Engine Games, CSS Autobhop</td>
 			</tr>
 			<tr>
 				<td data-sortvalue="TF2 Load"><a title="Resup script that remembers what loadout you're on." href="https://github.com/jooonior/tf2-loadouts-script">TF2 Loadouts Script</a></td>
@@ -348,6 +353,11 @@
 				<td data-sortvalue="Foobar Medi"><a title="Reports song info from foobar2000 to Windows; pairs with Discord Music Presence." href="https://github.com/ungive/foo_mediacontrol">foobar Media Control</a></td>
 				<td data-sortvalue="1">FOSS</td>
 				<td>foobar Addon, Discord Tool</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="Foobar Wave"><a title="Seekbar that shows the waveform of the track. Good alternative to default seekbar." href="https://foobar.hyv.fi/?view=foo_wave_minibar_mod">foobar Waveform Minibar</a></td>
+				<td data-sortvalue="2">Free</td>
+				<td>foobar Addon</td>
 			</tr>
 			<tr>
 				<td data-sortvalue="Foobar UI"><a title="Pleasing UI for foobar." href="https://github.com/reupen/columns_ui">foobar Columns UI</a></td>
@@ -470,11 +480,6 @@
 				<td>uBlock Blocklist</td>
 			</tr>
 			<tr>
-				<td data-sortvalue="Blueb"><a title="Block all Twitter verified users automatically and gradually." href="https://github.com/kheina-com/Blue-Blocker">Blue Blocker</a></td>
-				<td data-sortvalue="1">FOSS</td>
-				<td>Browser Extension, Twitter Tool</td>
-			</tr>
-			<tr>
 				<td data-sortvalue="Spons"><a title="Block ads within YouTube videos." href="https://github.com/ajayyy/SponsorBlock">SponsorBlock</a></td>
 				<td data-sortvalue="1">FOSS</td>
 				<td>Browser Extension, YouTube Tool</td>
@@ -485,9 +490,9 @@
 				<td>Browser Extension</td>
 			</tr>
 			<tr>
-				<td data-sortvalue="Image"><a title="Powerful CLI tool to edit and manipulate images. Best for advanced operations." href="https://imagemagick.org/">ImageMagick</a></td>
+				<td data-sortvalue="Conve"><a title="Powerful GUI tool to edit and manipulate images. Uses ImageMagick." href="https://github.com/Faster3ck/Converseen">Converseen</a></td>
 				<td data-sortvalue="1">FOSS</td>
-				<td>CLI, Photo Manipulation, Image Converter</td>
+				<td>Photo Manipulation, Image Converter</td>
 			</tr>
 			<tr>
 				<td data-sortvalue="NAPS2"><a title="Scan documents and photos without hassle." href="https://www.naps2.com/">NAPS2</a></td>
@@ -540,7 +545,7 @@
 				<td>Browser Extension</td>
 			</tr>
 			<tr>
-				<td data-sortvalue="Bandc"><a title="Add a much-needed volume slider to Bandcamp." href="https://github.com/butterknight/bandcamp-volume-control">Bandcamp Volume Control</a></td>
+				<td data-sortvalue="Bandc"><a title="Add various QoL features to Bandcamp." href="https://github.com/bamdadfr/bandcamp-plus--extension">Bandcamp+</a></td>
 				<td data-sortvalue="1">FOSS</td>
 				<td>Browser Extension, Bandcamp Tool</td>
 			</tr>
@@ -548,6 +553,11 @@
 				<td data-sortvalue="Steamdb"><a title="Adds valuable resources for Steam Store browsers (only in actual browsers)." href="https://github.com/SteamDatabase/BrowserExtension">SteamDB</a></td>
 				<td data-sortvalue="1">FOSS</td>
 				<td>Browser Extension, Steam Tool</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="ClearU"><a title="Clears junk from URLs automatically." href="https://github.com/ClearURLs/Addon">ClearURLs</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Browser Extension</td>
 			</tr>
 			<tr>
 				<td data-sortvalue="Mediainf"><a title="Display of the most relevant technical and tag data for video and audio files." href="https://github.com/MediaArea/MediaInfo">MediaInfo</a></td>
@@ -583,6 +593,26 @@
 				<td data-sortvalue="Bette"><a title="A user.js for Firefox that focuses on speed, privacy, and security." href="https://github.com/yokoffing/Betterfox">Betterfox</a></td>
 				<td data-sortvalue="1">FOSS</td>
 				<td>Firefox User.js</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="fnord"><a title="A massively useful list of plugins for various Adobe software." href="https://www.fnord.com/">fnord's plugins</a></td>
+				<td data-sortvalue="2">Free</td>
+				<td>Adobe Software Plugins</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="czkawka"><a title="Multi functional app to find duplicates, empty folders, similar images, etc." href="https://github.com/qarmin/czkawka">czkawka</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>Duplicate File Finder, Cleanup Tool</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="fnord"><a title="Lightweight CD/DVD/HD DVD/BluRay burning application." href="https://www.imgburn.com/">ImgBurn</a></td>
+				<td data-sortvalue="2">Free</td>
+				<td>Disc Burning</td>
+			</tr>
+			<tr>
+				<td data-sortvalue="WinCDE"><a title="Easily mount ISOs for CD/DVD/BD." href="https://wincdemu.sysprogs.org/">WinCDEmu</a></td>
+				<td data-sortvalue="1">FOSS</td>
+				<td>ISO Mounting</td>
 			</tr>
 		</table> 
 	</div>
